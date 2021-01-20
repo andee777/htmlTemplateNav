@@ -1,0 +1,174 @@
+body{
+    position: absolute;
+    background-color: black;
+    background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/oriental-tiles.png');
+    /* color:white; */
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* Toggle */
+#languageToggle {
+    color:white;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 2;
+}
+
+/* main div1 */
+#landingPictureContainer {
+    height: 90%;
+}
+
+/* #landingPicture {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    object-fit: cover;
+} */
+
+#logoSaveAylmer {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+#textSaveAylmer {
+    font-family: 'Oswald', sans-serif;
+    color: whitesmoke;
+    font-size: 6vw;
+    border: 5px solid #72bc1e;
+    text-align: center;
+    padding: 20px 40px 30px 40px;
+    background: rgba( 250, 250, 250, 0.2);
+    backdrop-filter: blur( 0.5px );
+    -webkit-backdrop-filter: blur( 0.5px );
+}
+
+
+
+/* main div2 */
+#content {
+    /* border: 1px solid white; */
+    padding: 30px;
+    width: 50%;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+#overview-img-link {
+    margin-right:20px;
+}
+
+#intro {
+    /* border: 1px solid dodgerblue; */
+    text-align: left;
+    margin: auto ;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap-reverse;      
+}
+
+#white-copy {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #72bc1e;
+    padding: 20px;
+    border-radius: 5px;
+    font-weight:550;
+}
+
+.blk-txt {
+    color: black;
+    font-weight: bold;
+}
+
+.imp {
+    text-decoration: underline;
+}
+
+.infoSection {
+    width: 55%;      
+}
+
+/* .french {
+    display: none;
+} */
+
+/* main div3 */
+#pictureLinks {
+    width: 50%;
+    background-color: #f4f4f4;
+}
+
+#pictureLinks a{
+    color: white;
+}
+
+/* container of one picture link */
+.containerPictureLink {
+    position:relative;
+    border: 3px solid #66a41e;
+    width: 50%;
+    opacity: 1;
+    margin: auto;
+    border-radius: 2px;
+}
+
+.pictureLink {
+    display: flex;
+    justify-content: center;
+}
+
+.textLink {
+    position: absolute;
+    background-color: #72bc1e;
+    top:0px;
+    left:0px;
+    border-radius: 20px;
+    width: 200px;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 15%;
+    margin-left: 15%;
+    margin-right: 15%;
+    opacity: 0.5;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.containerPictureLink:hover .pictureLink {
+    opacity: 0.4;
+}
+.containerPictureLink:hover .textLink {
+    opacity: 1;
+}
+
+
+@media only screen and (max-width: 450px) {
+    #textSaveAylmer {
+        font-size: 10vw;
+    }
+
+    #content {
+        padding: 10px;
+    }
+    .infoSection {
+        width: 90%;      
+    }
+    #overview-img-link {
+        margin-right:0px;
+    }
+}

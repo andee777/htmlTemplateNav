@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Quattrocento&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Save Aylmer</title>
+    <link rel="stylesheet" href="index.css"/>
+    <script src="languageToggle.js"></script>
+
+</head>
+<body onload="checkLanguagePref()">
+    <!-- Sticky language toggle -->
+    <div id='languageToggle'>
+        <div class="switch switch--horizontal">
+             <input id="radio-a" type="radio" name="first-switch" 
+             checked="checked" onchange="toggleEN()"/>
+             <label for="radio-a">English</label>
+             <input id="radio-b" type="radio" name="second-switch" 
+             onchange="toggleFR()"/>
+             <label id='english-label' name="radio-b">Français</label><span class="toggle-outside"><span class="toggle-inside"></span></span>
+        </div>
+   </div>
+
+
+    <!-- div3 -->
+    <div id="pictureLinks">
+        <div class="containerPictureLink">
+            <a class='pictureLink' href="index.html">
+                <img src="pictures\photo-by-charles-grant_1_edited.jpg" alt="A happy puppy." class='image' 
+                    style="width:100%; border-radius: 2px;">
+            </a>
+            <a class='textLink english' href="index.html">Home</a>
+            <a class='textLink french' href="index.html">Acceuil</a>
+        </div>
+        <br/>
+        <div class="containerPictureLink">
+            <a class='pictureLink' href="index.html">
+                <img src="pictures\chives2_edited.jpg" alt="A happy puppy." class='image' 
+                    style="width:100%; border-radius: 2px;">
+            </a>
+            <a class='textLink english' href="index.html">Rue Deschênes Riparian Prarie</a>    
+            <a class='textLink french' href="index.html">La prairie riveraine de la rue Deschênes</a>    
+        </div>
+
+        <button onclick="goBack()">Back to home</button>
+    </div>
+</body>
+</html>
