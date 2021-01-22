@@ -1,7 +1,7 @@
 body{
     position: absolute;
     background-color: black;
-    background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/oriental-tiles.png');
+    
     /* color:white; */
     height: 100vh;
     margin: 0;
@@ -21,52 +21,39 @@ body{
 }
 
 /* main div1 */
-#landingPictureContainer {
-    /* height: 100%; */
+#pageContainer {
     background-image: url('./pictures/backdrop.jpg');
-    background-repeat:repeat-y; /* Do not repeat the image */
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
-    width: 100%;
-}
-
-#landingPicture {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-    /* height: 100%; */
-    /* width: 100%; */
-    opacity: 0.5;
-    object-fit: contain;
-}
-
-#logoSaveAylmer {
     text-align: center;
-    height: 100%;
     display: grid;
     justify-content: center;
-    grid-template-rows: 180px 1fr;
+    /* grid-template-rows: 0.7fr 1fr 180px; */
     opacity: 1;
 }
 
-#textSaveAylmer {
+#headerSaveAylmer {
     font-family: 'Oswald', sans-serif;
     color: whitesmoke;
-    font-size: 6vw;
+    font-size: 2em;
     /* border: 5px solid #7e87c7; */
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: rgba(3, 44, 3, 0.5);
     /* backdrop-filter: blur( 1px );
     -webkit-backdrop-filter: blur( 1px ); */
     text-shadow:  2px 2px rgba( 0, 0, 0, 0.75);
-
+    height: 90vh;
 }
 
 .blurFooter {
     /* border: 5px solid #7e87c7; */
-    height: 150px;
     width: 100%;
+    height: 180px;
     background: rgba(3, 44, 3, 0.5);
     /* backdrop-filter: blur( 0.5px );
     -webkit-backdrop-filter: blur( 0px ); */
@@ -146,13 +133,11 @@ body{
 .textLink {
     position: absolute;
     background-color: #468654;
-    top:0px;
-    left:0px;
+    bottom: 0px;
+    right: 0px;
     width: 200px;
     text-decoration: none;
     padding: 10px;
-    margin-top: 55%;
-    margin-left: 45%;
     opacity: 0.85;
     text-align: center;
 }
@@ -170,9 +155,8 @@ body{
         grid-template-rows: 90px 1fr;
     }
     
-    #textSaveAylmer {
-        padding-top: 20px;
-        font-size: 10vw;
+    #headerSaveAylmer {
+        font-size: 18px;
     }
 
     .containerPictureLink {
@@ -185,8 +169,11 @@ body{
         margin-right:0px;
     }
     .textLink {
-        margin-top: 0;
-        margin-left: 0;
+        top:0;
+        left: 0;
+        bottom: auto;
+        right: auto;
         opacity: 0.85;
+        width: max-content;
     }
 }

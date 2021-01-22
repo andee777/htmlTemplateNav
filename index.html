@@ -13,46 +13,53 @@
 <body onload="checkLanguagePref()">
     <!-- Sticky language toggle -->
     <div id='languageToggle'>
-        <div class="switch switch--horizontal">
-             <input id="radio-a" type="radio" name="first-switch" 
-             checked="checked" onchange="toggleEN()"/>
-             <label for="radio-a">English</label>
-             <input id="radio-b" type="radio" name="second-switch" 
-             onchange="toggleFR()"/>
-             <label id='english-label' name="radio-b">Français</label><span class="toggle-outside"><span class="toggle-inside"></span></span>
+        <div style="display: flex; align-items: center; justify-content: space-around; width: 120px; background-color: rgba(244, 244, 244, 0.5); border-radius: 5px;">
+            <input id="radio-a" type="radio" name="first-switch" 
+                checked="checked" onchange="toggleEN()"/>
+            <img src="./pictures/uk.svg" style="width:30px; height: 30px; border-radius: 10px;">
+            <input id="radio-b" type="radio" name="second-switch" 
+                onchange="toggleFR()"/>
+             <img src="./pictures/france.svg" style="width:30px; height: 30px;">
+             <span class="toggle-outside">
+                 <span class="toggle-inside"></span>
+            </span>
         </div>
         <img src="pictures\lion.svg" alt="A happy puppy." class='image' 
                             style="width:50px;height:50px; float: right; border-radius: 2px;">
    </div>
 
     <!-- div1 -->
-    <div id="landingPictureContainer">
-        <div id="logoSaveAylmer">
-            <h1 id="textSaveAylmer" style="margin:0;">
-                SaveNorthLondon.org
-            </h1>
+    <div id="pageContainer">
+        <div id="headerSaveAylmer">
+                <h1 style="margin: 10px;">SaveNorthLondon.org</h1>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; ">
+                    <button style="width:220px; height: 50px; margin: 10px; background-color: seagreen; border: none; border-radius: 5px; color: white; font-size: 20px;">Help our town now</button>
+                    <button style="width:180px; height: 50px; margin: 10px; background-color:darkseagreen; border: none; border-radius: 5px; color: white; font-size: 20px;">About us</button>            
+                </div>
+        </div>
+        <!-- div2 -->
+        <div id="content">
+            <br/>
+            <br/>
 
-            <!-- div2 -->
-            <div id="content">
-
-                <div id="intro">
-                    <a href='pictures/overview.jpg' id='overview-img-link'>
-                        <img id='overview-img' src='pictures/overview-thumb.jpg'>
-                    </a>
-                    <div class='infoSection english'>
-                        <p>Are you alarmed by the <span class='empf' style='color: #e63232;'>RAPID DESTRUCTION</span> of our town's natural spaces and wetlands?</span></p>
-                        <p id='white-copy'>On July 7th, <span class='imp'>New Brunswick city council voted whether or not to sell this unique forest to developers!</span> A plan to protect the Big forest in its entirety - as proposed by Mikel Duggan (Peel district councilor) and Maximus Jobin (Mayor of Greelish) - has been unanimously accepted by all members of the North London municipal council.<br><br>
-                        The forest <span class='blk-txt'>WILL NOT BE SOLD</span> to developers. It <span class='blk-txt'>WILL BE PRESERVED!</span><br><br>
-                        Furthermore, propositions have been made to change municipal policies regarding the sale of such valuable natural spaces in the future.</p><p>The Big forest needs to be protected in its <span class='empf'>ENTIRETY</span> to ensure the preservation of its biological, cultural, and archaeological value.
-                        </p>
-                    </div>
-                    <div class='infoSection french'>
-                        <p>Êtes-vous alarmé par la <span class='empf' style='color: #e63232;'>DESTRUCTION RAPIDE</span> des espaces naturels et des zones humides de notre ville?</span></p>
-                        <p id='white-copy'>Le 7 juillet, <span class='imp'>le conseil municipal de New Brunswick a vote pour vendre ou non cette foret unique aux promoteurs!</span> Un plan de protection de la Grande forêt dans son intégralité - tel que proposé par Mikel Duggan (conseiller du district de Peel) et Maximus Jobin (maire de Greelish) - a été accepté à l'unanimité par tous les membres du conseil municipal de North London.<br><br>
-                        La forêt <span class='blk-txt'>NE SERA PAS VENDUE</span> aux développeurs. <span class='blk-txt'>IL SERA CONSERVÉ!</span><br><br>
-                        De plus, des propositions ont été faites pour changer les politiques municipales concernant la vente de ces espaces naturels précieux à l'avenir.</p><p>La Grande forêt doit être protégée dans son <span class='empf'>INTÉGRALITÉ</span> pour assurer la préservation de sa valeur biologique, culturelle et archéologique.
-                        </p>  
-                    </div>
+            <div id="intro">
+                <a href='pictures/overview.jpg' id='overview-img-link'>
+                    <img id='overview-img' src='pictures/overview-thumb.jpg'>
+                </a>
+                <div class='infoSection english'>
+                    <p>Are you alarmed by the <span class='empf' style='color: #e63232;'>RAPID DESTRUCTION</span> of our town's natural spaces and wetlands?</span></p>
+                    <p id='white-copy'>On July 7th, <span class='imp'>New Brunswick city council voted whether or not to sell this unique forest to developers!</span> A plan to protect the Big forest in its entirety - as proposed by Mikel Duggan (Peel district councilor) and Maximus Jobin (Mayor of Greelish) - has been unanimously accepted by all members of the North London municipal council.<br><br>
+                    The forest <span class='blk-txt'>WILL NOT BE SOLD</span> to developers. It <span class='blk-txt'>WILL BE PRESERVED!</span><br><br>
+                    Furthermore, propositions have been made to change municipal policies regarding the sale of such valuable natural spaces in the future.</p><p>The Big forest needs to be protected in its <span class='empf'>ENTIRETY</span> to ensure the preservation of its biological, cultural, and archaeological value.
+                    </p>
+                </div>
+                <div class='infoSection french'>
+                    <p>Êtes-vous alarmé par la <span class='empf' style='color: #e63232;'>DESTRUCTION RAPIDE</span> des espaces naturels et des zones humides de notre ville?</span></p>
+                    <p id='white-copy'>Le 7 juillet, <span class='imp'>le conseil municipal de New Brunswick a vote pour vendre ou non cette foret unique aux promoteurs!</span> Un plan de protection de la Grande forêt dans son intégralité - tel que proposé par Mikel Duggan (conseiller du district de Peel) et Maximus Jobin (maire de Greelish) - a été accepté à l'unanimité par tous les membres du conseil municipal de North London.<br><br>
+                    La forêt <span class='blk-txt'>NE SERA PAS VENDUE</span> aux développeurs. <span class='blk-txt'>IL SERA CONSERVÉ!</span><br><br>
+                    De plus, des propositions ont été faites pour changer les politiques municipales concernant la vente de ces espaces naturels précieux à l'avenir.</p><p>La Grande forêt doit être protégée dans son <span class='empf'>INTÉGRALITÉ</span> pour assurer la préservation de sa valeur biologique, culturelle et archéologique.
+                    </p>  
+                </div>
             </div>
 
             <div class='infoSubtitle '>
@@ -82,12 +89,9 @@
             </div> 
             <br/>
             <br/>
-
-        </div>
-        
+        </div> 
         <div class="blurFooter"></div>
     </div>
 
-    </div>
 </body>
 </html>
